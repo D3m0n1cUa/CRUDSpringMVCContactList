@@ -1,0 +1,122 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ua.sergii</groupId>
+  <artifactId>CRUDSpringMVCContactList</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>CRUDContactList</name>
+  
+  	<!-- ______________________ PROPERTY _____________________ -->
+   <properties>
+        <springframework.version>4.2.0.RELEASE</springframework.version>
+        <aspectj.version>1.8.10</aspectj.version>
+        <jackson.version>2.5.3</jackson.version>
+        <jsp.version>3.1.0</jsp.version>
+        <jstl.version>1.2</jstl.version>
+        <mysqlcontector.version>5.1.38</mysqlcontector.version>
+        <hibernate.version>5.2.2.Final</hibernate.version>
+        <log4j.version>1.2.17</log4j.version>
+        <mavencompilerplugin.version>3.2</mavencompilerplugin.version>
+        <mavenwarplugin.version>2.4</mavenwarplugin.version>
+    </properties>
+ 
+    <dependencies>
+    
+    <!-- ______________________ SPRING _____________________ -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        
+        <dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-aop</artifactId>
+		    <version>${springframework.version}</version>
+		</dependency>
+		
+	<!-- ______________________ASPECTJ _____________________ -->	
+		<dependency>
+		    <groupId>org.aspectj</groupId>
+		    <artifactId>aspectjrt</artifactId>
+		    <version>${aspectj.version}</version>
+		</dependency>
+
+		<dependency>
+		    <groupId>org.aspectj</groupId>
+		    <artifactId>aspectjweaver</artifactId>
+		    <version>${aspectj.version}</version>
+		</dependency>
+ 	
+ 	<!-- ______________________ JACKSON _____________________ -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        
+   <!-- ______________________ JSP _____________________ -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${jsp.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>${jstl.version}</version>
+        </dependency>
+        
+  <!-- ______________________ MySQL _____________________ -->
+        <dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysqlcontector.version}</version>
+		</dependency>
+
+	<!-- ______________________ HIBERNATE _____________________ -->	
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+		
+	<!-- _______________________ LOG4J _______________________ -->
+		<dependency>
+	    	<groupId>log4j</groupId>
+	    	<artifactId>log4j</artifactId>
+	    	<version>${log4j.version}</version>
+		</dependency>
+             
+    </dependencies>
+    
+    <build>
+    	<pluginManagement>
+    		<plugins>
+    			<plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${mavencompilerplugin.version}</version>
+                    <configuration>
+                        <source>1.8</source>
+                        <target>1.8</target>
+                    </configuration>
+                </plugin>
+                <plugin>
+		  		<groupId>org.apache.maven.plugins</groupId>
+		  		<artifactId>maven-war-plugin</artifactId>
+		  		<configuration>
+			 		<warName>CRUDContactList</warName>
+			 		<failOnMissingWebXml>false</failOnMissingWebXml>
+		  		</configuration>
+	    	</plugin>
+    		</plugins>
+    	</pluginManagement>
+    </build>
+    
+</project>

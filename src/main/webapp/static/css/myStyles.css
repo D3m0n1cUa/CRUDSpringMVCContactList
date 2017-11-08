@@ -1,0 +1,86 @@
+body, #mainWrapper {
+	height: 70%;
+	width: 100%;
+	background-color: #f5f5f5;
+}
+
+.modal-header {
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #f5f5f5;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+ }
+
+.headModal {
+	font-size: 130%;
+}
+
+body, .form-control {
+	font-size:12px!important;
+}
+
+.floatRight {
+	float:right;
+	margin-right: 18px;
+}
+
+.has-error {
+	color:red;
+}
+
+.formcontainer {
+	background-color: #DAE8E8;
+	padding: 20px;
+}
+
+.tablecontainer {
+	padding-left: 20px;
+}
+
+.generic-container {
+  width:80%;
+  margin: auto;
+  margin-top: 50px;
+  background-color: #EAE7E7;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 0 30px black;
+}
+
+.headertable {
+	background-color: #def2fc;	
+}
+
+.custom-width {
+    width: 80px !important;
+}
+
+.requiredfields.ng-valid {
+	background-color: #d9fcdb;
+}
+
+.requiredfields.ng-dirty.ng-invalid-required {
+	background-color: #fcd9d9;
+}
+
+.requiredfields.ng-dirty.ng-invalid-minlength {
+	background-color: #f8f9b6;
+}
+
+.table-user-information > tbody > tr {
+    border-top: 1px solid #dddddd;
+}
+
+.table-user-information > tbody > tr:first-child {
+    border-top: 0px;
+}
+
+.table-user-information > tbody > tr > td {
+    border-top: 0px;
+}
+
