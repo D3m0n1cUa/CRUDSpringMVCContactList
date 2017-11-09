@@ -1,12 +1,12 @@
 # CRUDSpringMVCContactList
 
-The CRUDSpringMVCContactList is a simple CRUD RestFULL web-app. This app was developed for understanding and practicing the follows technologies:
+The CRUDSpringMVCContactList is a simple CRUD RestFULL web-app. This app was developed for understanding and practicing the following technologies:
 1. Java EE
 2. JSP
 3. Spring MVC
 4. Hibernate
 5. MySQL
-6. HTML/CSS
+6. HTML5/CSS3/Bootstrap
 7. JavaScript/AngularJS
 8. Rest
 
