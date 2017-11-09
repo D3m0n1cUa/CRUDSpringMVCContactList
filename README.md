@@ -10,7 +10,7 @@ The CRUDSpringMVCContactList is a simple CRUD RestFULL web-app. This app was dev
 7. JavaScript/AngularJS
 8. Rest
 
-IDE: Eclipse Neon
-Web-server: Tomcat 8
+IDE: Eclipse Neon  
+Web-server: Tomcat 8  
 
 The working example is here: http://95.85.57.79:8080/CRUDContactList
